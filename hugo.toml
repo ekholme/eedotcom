@@ -1,3 +1,8 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://ericekholm.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Eric Ekholm'
+theme = 'archie'
+
+[params]
+  mode = "auto"
+  useFullHTMLContent = false
