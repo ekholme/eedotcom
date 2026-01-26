@@ -1,8 +1,29 @@
 baseURL = 'https://ericekholm.com/'
 languageCode = 'en-us'
 title = 'Eric Ekholm'
+copyright = "© Eric Ekholm"
 theme = 'archie'
 
 [params]
   mode = "auto"
   useFullHTMLContent = false
+
+[[params.social]]
+name = "Github"
+icon = "github"
+url = "https://github.com/ekholme"
+
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 2
+
+[[menu.main]]
+name = "AI"
+url = "/ai"
+weight = 3

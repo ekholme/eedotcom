@@ -6,8 +6,15 @@
     <description>Recent content on Eric Ekholm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jan 2026 14:35:33 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 26 Jan 2026 16:02:56 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Mon, 26 Jan 2026 16:02:56 -0500</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Hi, I&amp;rsquo;m Eric! I&amp;rsquo;m a data scientist and education researcher. I am currently a data scientist for Chesterfield County Public Schools, where I use data to help guide decisions and improve both students&amp;rsquo; and teachers&amp;rsquo; educational experiences. In my free time, I enjoy reading, writing, coding, working out, baking, and spending time with friends &amp;amp; family (including my pup, Nala).&lt;/p&gt;&#xA;&lt;p&gt;I earned my PhD in educational psychology from VCU in 2019. In my &lt;a href=&#34;https://scholarscompass.vcu.edu/etd/5977/&#34;&gt;dissertation&lt;/a&gt;, I studied how writers&amp;rsquo; emotional states influenced their productivity as well as the day-to-day inertia of these emotional states.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Transitioning my Website to Hugo</title>
       <link>http://localhost:1313/posts/transition-to-hugo/</link>
