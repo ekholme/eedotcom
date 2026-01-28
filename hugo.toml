@@ -24,6 +24,11 @@ url = "/about"
 weight = 2
 
 [[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 3
+
+[[menu.main]]
 name = "AI"
 url = "/ai"
-weight = 3
+weight = 4

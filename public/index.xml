@@ -6,8 +6,23 @@
     <description>Recent content on Eric Ekholm</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 26 Jan 2026 16:02:56 -0500</lastBuildDate>
+    <copyright>© Eric Ekholm</copyright>
+    <lastBuildDate>Wed, 28 Jan 2026 14:53:20 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Wed, 28 Jan 2026 14:53:20 -0500</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;p&gt;Below is a selected list of projects I&amp;rsquo;m currently working on or have worked on recently:&lt;/p&gt;&#xA;&lt;h2 id=&#34;brain&#34;&gt;Brain&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ekholme.github.io/brain&#34;&gt;Brain&lt;/a&gt; is my &amp;ldquo;second brain.&amp;rdquo; It&amp;rsquo;s a collection of notes on things that interest me, including stats, coding, baking, and fitness, among others. Feel free to poke around!&lt;/p&gt;&#xA;&lt;h2 id=&#34;edudata&#34;&gt;Edudata&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://edudata.blog&#34;&gt;Edudata&lt;/a&gt; is a blog I write about topics loosely connected to education and data. I used to publish posts weekly, but lately I&amp;rsquo;ve been publishing less regularly.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ai</title>
+      <link>http://localhost:1313/ai/</link>
+      <pubDate>Mon, 26 Jan 2026 16:34:46 -0500</pubDate>
+      <guid>http://localhost:1313/ai/</guid>
+      <description>&lt;h1 id=&#34;my-ai-policy&#34;&gt;My AI Policy&lt;/h1&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t use AI to write anything you read here, or on any of my other sites. I enjoy writing, plus it helps me think, and I don&amp;rsquo;t want to farm my writing or thinking out to our AI overlords.&lt;/p&gt;&#xA;&lt;p&gt;That said, I do use AI for some things, including fact-checking understanding of certain topics (this is mostly relevant for my notes site) or for helping with technical non-writing things around the site.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/</link>
