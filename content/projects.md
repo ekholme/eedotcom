@@ -1,6 +1,6 @@
 +++
 date = '2026-01-28T14:53:20-05:00'
-draft = true
+draft = false
 title = 'Projects'
 +++
 
@@ -16,5 +16,5 @@ Below is a selected list of projects I'm currently working on or have worked on 
 
 ## blueycolors
 
-[blueycolors](https://github.com/ekholme/blueycolors) is an R package that provides bluey-themed colors scales with `{ggplot2}`
+[blueycolors](https://github.com/ekholme/blueycolors) is an R package that provides bluey-themed colors scales with `{ggplot2}`.
 
