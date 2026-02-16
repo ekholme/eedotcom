@@ -47,3 +47,8 @@ weight = 5
 name = "AI"
 url = "/ai"
 weight = 6
+
+[[menu.main]]
+name = "Archive"
+url = "https://archive.ericekholm.com"
+weight = 7

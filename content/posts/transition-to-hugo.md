@@ -15,3 +15,5 @@ Second, I used these posts as a way both to network and build a portfolio. Befor
 Fast-forward to 2026, though, and I'm less interested in writing regular data-analysis blog posts anymore, whether using R or Python or Julia or any other language. I'm still constantly trying to improve my proficiency in all of those languages, but I've been doing so through other means (such as maintaining [Brain, my personal notes site](https://ekholme.github.io/brain/), or regularly working on coding "katas").
 
 And so I don't really need all of the capabilities Quarto offers for my personal site anymore. This isn't meant as a knock against Quarto -- I still use it regularly to create reports at work. But I've used Hugo to create other sites before, and given my current needs, it just feels like a better fit. It's simpler and faster, which is what I want right now. And if I ever feel compelled to write a "data-analysis" flavored blog post, it's only moderately more work to do so.
+
+If you want to check out my old site, I have it [archived here.](https://archive.ericekholm.com)
