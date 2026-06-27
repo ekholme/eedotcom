@@ -18,7 +18,6 @@ Below is a selected list of projects I'm currently working on or have worked on 
 
 [blueycolors](https://github.com/ekholme/blueycolors) is an R package that provides bluey-themed colors scales with `{ggplot2}`.
 
-## flexcreek
+## fran
 
-[flexcreek](https://github.com/ekholme/flexcreek) is a TUI for tracking workouts (*work in progress*).
-
+[fran](https://github.com/ekholme/fran) is a minimalist TUI for tracking workouts (*work in progress*).
