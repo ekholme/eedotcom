@@ -2,7 +2,7 @@ baseURL = 'https://ericekholm.com/'
 languageCode = 'en-us'
 title = 'Eric Ekholm'
 copyright = "© Eric Ekholm"
-theme = 'archie'
+theme = 'hugo-bearblog'
 
 [params]
   mode = "auto"
@@ -20,22 +20,22 @@ url = "https://x.com/ekholm_e"
 
 [[menu.main]]
 name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "All Posts"
 url = "/posts"
-weight = 2
+weight = 1
 
 [[menu.main]]
 name = "About"
 url = "/about"
-weight = 3
+weight = 2
 
 [[menu.main]]
 name = "Projects"
 url = "/projects"
+weight = 3
+
+[[menu.main]]
+name = "AI"
+url = "/ai"
 weight = 4
 
 [[menu.main]]
@@ -44,11 +44,7 @@ url = "/index.xml"
 weight = 5
 
 [[menu.main]]
-name = "AI"
-url = "/ai"
-weight = 6
-
-[[menu.main]]
 name = "Archive"
 url = "https://archive.ericekholm.com"
-weight = 7
+weight = 6
+
