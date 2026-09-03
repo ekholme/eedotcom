@@ -12,9 +12,16 @@
 			<copyright>© Eric Ekholm</copyright>
 		
 		
-			<lastBuildDate>Thu, 07 May 2026 13:56:08 -0400</lastBuildDate>
+			<lastBuildDate>Wed, 02 Sep 2026 20:32:07 -0400</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Year Linux Desktop</title>
+				<link>http://localhost:1313/posts/year-linux-desktop/</link>
+				<pubDate>Wed, 02 Sep 2026 20:32:07 -0400</pubDate>
+				<guid>http://localhost:1313/posts/year-linux-desktop/</guid>
+				<description>&lt;p&gt;I recently listened to &lt;a href=&#34;https://dhh.dk/&#34;&gt;DHH&lt;/a&gt; on the Lex Fridman podcast, and one of the arguments he made during the conversation was that it’s (finally) the Year of the Linux Desktop. Regardless of whether you like DHH or not (disclaimer: I like DHH the developer; I could do without the politics, but I can separate the two), it’s a worthwhile listen.&lt;/p&gt;&#xA;&lt;p&gt;DHH’s argument for why we’re about the enter the golden era of the Linux desktop is essentially that Linux systems are in general way more customizable than Windows/Mac, that Linux is very well documented (see e.g. the famous &lt;a href=&#34;https://wiki.archlinux.org/title/Main_page&#34;&gt;Arch wiki&lt;/a&gt;), and that frontier AI models are good enough now that they can slurp up all of that documentation and allow even non-programmers to customize and manage a Linux computer all through interactions with an agent, never even having to open up a config file or even a terminal.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Omarchy for Computer Dads</title>
 				<link>http://localhost:1313/posts/omarchy-computer-dads/</link>
