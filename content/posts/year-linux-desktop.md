@@ -1,6 +1,6 @@
 +++
 date = '2026-09-02T20:32:07-04:00'
-draft = true
+draft = false
 title = 'Year of the Linux Desktop? Maybe Not'
 +++
 
