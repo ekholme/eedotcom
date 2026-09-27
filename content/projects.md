@@ -4,7 +4,7 @@ draft = false
 title = 'Projects'
 +++
 
-Below is a selected list of projects I'm currently working on or have worked on recently:
+Below is a selected list of projects I'm currently working on or have worked on recently. You can also check out my [publications page](/pubs/).
 
 ## Hand-crafted projects
 

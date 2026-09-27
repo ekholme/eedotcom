@@ -34,17 +34,12 @@ url = "/projects"
 weight = 3
 
 [[menu.main]]
-name = "AI"
-url = "/ai"
-weight = 4
-
-[[menu.main]]
 name = "RSS"
 url = "/index.xml"
-weight = 5
+weight = 4
 
 [[menu.main]]
 name = "Archive"
 url = "https://archive.ericekholm.com"
-weight = 6
+weight = 5
 

@@ -12,9 +12,16 @@
 			<copyright>© Eric Ekholm</copyright>
 		
 		
-			<lastBuildDate>Wed, 02 Sep 2026 20:32:07 -0400</lastBuildDate>
+			<lastBuildDate>Sun, 27 Sep 2026 14:57:48 -0400</lastBuildDate>
 		
 			<atom:link href="https://ericekholm.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Pubs</title>
+				<link>https://ericekholm.com/pubs/</link>
+				<pubDate>Sun, 27 Sep 2026 14:57:48 -0400</pubDate>
+				<guid>https://ericekholm.com/pubs/</guid>
+				<description>&lt;p&gt;Below is a list of my academic publications, other writing, and conference presentations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;academic--peer-reviewed-publications&#34;&gt;Academic &amp;amp; Peer-Reviewed Publications&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Senechal, J., Ekholm, E., Aljudaibi, S., Strawderman, M., &amp;amp; Parthemos, C. (2023). &amp;ldquo;Balancing the benefits and risks of large language AI models in K12 public schools&amp;rdquo; - MERC research brief.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Broda, M.D., Ross, E., Sorhagen, N., &amp;amp; Ekholm, E. (2023). Exploring control-value motivational profiles in adolescents. &lt;em&gt;Frontiers in Psychology&lt;/em&gt;, 14.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Marrs, S., Zumbrunn, S., &amp;amp; Ekholm, E. (2022). Measuring student perceptions of writing feedback. &lt;em&gt;Current Research in Psychology and Behavioral Science&lt;/em&gt;, 3(4).&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Year of the Linux Desktop? Maybe Not</title>
 				<link>https://ericekholm.com/posts/year-linux-desktop/</link>
@@ -34,14 +41,7 @@
 				<link>https://ericekholm.com/projects/</link>
 				<pubDate>Wed, 28 Jan 2026 14:53:20 -0500</pubDate>
 				<guid>https://ericekholm.com/projects/</guid>
-				<description>&lt;p&gt;Below is a selected list of projects I&amp;rsquo;m currently working on or have worked on recently:&lt;/p&gt;&#xA;&lt;h2 id=&#34;hand-crafted-projects&#34;&gt;Hand-crafted projects&lt;/h2&gt;&#xA;&lt;p&gt;The following projects are ones I&amp;rsquo;m working on (or have worked on) without any assistance from AI.&lt;/p&gt;&#xA;&lt;h3 id=&#34;brain&#34;&gt;Brain&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ekholme.github.io/brain&#34;&gt;Brain&lt;/a&gt; is my &amp;ldquo;second brain.&amp;rdquo; It&amp;rsquo;s a collection of notes on things that interest me, including stats, coding, baking, and fitness, among others. Feel free to poke around!&lt;/p&gt;&#xA;&lt;h3 id=&#34;edudata&#34;&gt;Edudata&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://edudata.blog&#34;&gt;Edudata&lt;/a&gt; is a blog I write about topics loosely connected to education and data. I used to publish posts weekly, but lately I&amp;rsquo;ve been publishing less regularly.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>Ai</title>
-				<link>https://ericekholm.com/ai/</link>
-				<pubDate>Mon, 26 Jan 2026 16:34:46 -0500</pubDate>
-				<guid>https://ericekholm.com/ai/</guid>
-				<description>&lt;h1 id=&#34;my-ai-policy&#34;&gt;My AI Policy&lt;/h1&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t use AI to write anything you read here, or on any of my other sites. I enjoy writing, plus it helps me think, and I don&amp;rsquo;t want to farm my writing or thinking out to our AI overlords.&lt;/p&gt;&#xA;&lt;p&gt;That said, I do use AI for some things, including fact-checking understanding of certain topics (this is mostly relevant for my notes site) or for helping with technical non-writing things around the site.&lt;/p&gt;</description>
+				<description>&lt;p&gt;Below is a selected list of projects I&amp;rsquo;m currently working on or have worked on recently. You can also check out my &lt;a href=&#34;https://ericekholm.com/pubs/&#34;&gt;publications page&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;hand-crafted-projects&#34;&gt;Hand-crafted projects&lt;/h2&gt;&#xA;&lt;p&gt;The following projects are ones I&amp;rsquo;m working on (or have worked on) without any assistance from AI.&lt;/p&gt;&#xA;&lt;h3 id=&#34;brain&#34;&gt;Brain&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://ekholme.github.io/brain&#34;&gt;Brain&lt;/a&gt; is my &amp;ldquo;second brain.&amp;rdquo; It&amp;rsquo;s a collection of notes on things that interest me, including stats, coding, baking, and fitness, among others. Feel free to poke around!&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>About Me</title>

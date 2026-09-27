@@ -3,7 +3,10 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ericekholm.com/</loc>
-    <lastmod>2026-09-02T20:32:07-04:00</lastmod>
+    <lastmod>2026-09-27T14:57:48-04:00</lastmod>
+  </url><url>
+    <loc>https://ericekholm.com/pubs/</loc>
+    <lastmod>2026-09-27T14:57:48-04:00</lastmod>
   </url><url>
     <loc>https://ericekholm.com/posts/</loc>
     <lastmod>2026-09-02T20:32:07-04:00</lastmod>
@@ -16,9 +19,6 @@
   </url><url>
     <loc>https://ericekholm.com/projects/</loc>
     <lastmod>2026-01-28T14:53:20-05:00</lastmod>
-  </url><url>
-    <loc>https://ericekholm.com/ai/</loc>
-    <lastmod>2026-01-26T16:34:46-05:00</lastmod>
   </url><url>
     <loc>https://ericekholm.com/about/</loc>
     <lastmod>2026-01-26T16:02:56-05:00</lastmod>
