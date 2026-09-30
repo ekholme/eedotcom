@@ -12,9 +12,16 @@
 			<copyright>© Eric Ekholm</copyright>
 		
 		
-			<lastBuildDate>Sun, 27 Sep 2026 14:57:48 -0400</lastBuildDate>
+			<lastBuildDate>Tue, 29 Sep 2026 22:33:13 -0400</lastBuildDate>
 		
 			<atom:link href="https://ericekholm.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>blueycolors is on CRAN</title>
+				<link>https://ericekholm.com/posts/blueycolors-on-cran/</link>
+				<pubDate>Tue, 29 Sep 2026 22:33:13 -0400</pubDate>
+				<guid>https://ericekholm.com/posts/blueycolors-on-cran/</guid>
+				<description>&lt;p&gt;As of a few days ago, &lt;a href=&#34;https://github.com/ekholme/blueycolors&#34;&gt;{blueycolors}&lt;/a&gt; – an R package I created that provides Bluey-inspired color palettes and ggplot scale functions – is on CRAN. Although I’ve been coding in R for about a decade, this is the first package I’ve ever submitted to CRAN. The short version is that it was much easier than I thought it would be – I just followed the steps outlined in in the Github issue created by &lt;code&gt;usethis::use_release_issue()&lt;/code&gt;, made sure to read the output of all of the checks, and addressed any errors or notes that popped up. I didn’t even need to recruit an AI buddy to help me out. The whole process was incredibly mundane and straightforward and not at all as intimidating as I (for whatever reason) anticipated.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Pubs</title>
 				<link>https://ericekholm.com/pubs/</link>
