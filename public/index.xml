@@ -12,9 +12,16 @@
 			<copyright>© Eric Ekholm</copyright>
 		
 		
-			<lastBuildDate>Fri, 23 Oct 2026 21:30:24 -0400</lastBuildDate>
+			<lastBuildDate>Sat, 24 Oct 2026 15:27:48 -0400</lastBuildDate>
 		
 			<atom:link href="https://ericekholm.com/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Omarchy Virginia Tech Theme Available</title>
+				<link>https://ericekholm.com/posts/omarchy-vt-theme/</link>
+				<pubDate>Sat, 24 Oct 2026 15:27:48 -0400</pubDate>
+				<guid>https://ericekholm.com/posts/omarchy-vt-theme/</guid>
+				<description>&lt;p&gt;For the presumably very small subset of people out there who are both Omarchy users and Hokies, I&amp;rsquo;ve got you covered.&lt;/p&gt;&#xA;&lt;p&gt;Check out the &lt;a href=&#34;https://github.com/ekholme/omarchy-virginia-tech-theme&#34;&gt;Virginia Tech theme for Omarchy&lt;/a&gt;. You can install it like so:&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;omarchy theme install https://github.com/ekholme/omarchy-virginia-tech&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s a glimpse at what it looks like:&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://github.com/ekholme/omarchy-virginia-tech-theme/blob/master/vt_preview.png?raw=true&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Learning Is Now Optional</title>
 				<link>https://ericekholm.com/posts/learning-is-now-optional/</link>
