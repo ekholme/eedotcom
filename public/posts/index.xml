@@ -12,9 +12,16 @@
 			<copyright>© Eric Ekholm</copyright>
 		
 		
-			<lastBuildDate>Tue, 29 Sep 2026 22:33:13 -0400</lastBuildDate>
+			<lastBuildDate>Fri, 23 Oct 2026 21:30:24 -0400</lastBuildDate>
 		
 			<atom:link href="https://ericekholm.com/posts/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Learning Is Now Optional</title>
+				<link>https://ericekholm.com/posts/learning-is-now-optional/</link>
+				<pubDate>Fri, 23 Oct 2026 21:30:24 -0400</pubDate>
+				<guid>https://ericekholm.com/posts/learning-is-now-optional/</guid>
+				<description>&lt;p&gt;I was looking at my Github profile recently, and I noticed that &lt;a href=&#34;https://github.com/ekholme/gcp_quarto_api&#34;&gt;one of my pinned (and most starred) repositories&lt;/a&gt; is a step-by-step guide for deploying an API to Google Cloud that can render parameterized Quarto reports with data analyzed using R. I wrote the guide 3 years ago after struggling to build an internal tool at work that created class-specific reports for teachers.&lt;/p&gt;&#xA;&lt;p&gt;Now, 3 years later, this type of tutorial feels so, so obsolete. If you’re a data scientist in 2026 and you need to build a tool like this, you just ask your AI model of choice, and it will happily build it for you.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>blueycolors is on CRAN</title>
 				<link>https://ericekholm.com/posts/blueycolors-on-cran/</link>
