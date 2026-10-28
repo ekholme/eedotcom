@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Updating beliefs via Bayes’ Rule | Eric Ekholm</title>
+<meta name="title" content="Updating beliefs via Bayes’ Rule" />
+<meta name="description" content="We talk a lot in education about “using data,” and my general take is that the phrase “using data” doesn’t actually mean anything. But, if we want to be gracious and ignore all of the vagaries that come along with that phrase, then I think that “applying Bayes’ Rule” is what most people mean when they talk about “using data.” 
+Bayes&rsquo; Rule mathematically formalizes a process for updating beliefs that incorporates both prior beliefs and new data. It can be used to estimate lots of things, but we’ll limit this to beliefs here for the sake of concision. If you’re interested in learning more, the book Bayes Rules! by Johnson, Ott, and Dogucu is awesome, and the first chapter is very accessible (subsequent chapters assume some knowledge of programming and mathematical notation)." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="https://ericekholm.com/edudata/updating-beliefs-via-bayes-rule/">
+	<meta property="og:site_name" content="Eric Ekholm">
+	<meta property="og:title" content="Updating beliefs via Bayes’ Rule">
+	<meta property="og:description" content="We talk a lot in education about “using data,” and my general take is that the phrase “using data” doesn’t actually mean anything. But, if we want to be gracious and ignore all of the vagaries that come along with that phrase, then I think that “applying Bayes’ Rule” is what most people mean when they talk about “using data.” Bayes’ Rule mathematically formalizes a process for updating beliefs that incorporates both prior beliefs and new data. It can be used to estimate lots of things, but we’ll limit this to beliefs here for the sake of concision. If you’re interested in learning more, the book Bayes Rules! by Johnson, Ott, and Dogucu is awesome, and the first chapter is very accessible (subsequent chapters assume some knowledge of programming and mathematical notation).">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="edudata">
+		<meta property="article:published_time" content="2025-01-10T13:00:31+00:00">
+		<meta property="article:modified_time" content="2025-01-10T13:00:31+00:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Updating beliefs via Bayes’ Rule">
+	<meta name="twitter:description" content="We talk a lot in education about “using data,” and my general take is that the phrase “using data” doesn’t actually mean anything. But, if we want to be gracious and ignore all of the vagaries that come along with that phrase, then I think that “applying Bayes’ Rule” is what most people mean when they talk about “using data.” Bayes’ Rule mathematically formalizes a process for updating beliefs that incorporates both prior beliefs and new data. It can be used to estimate lots of things, but we’ll limit this to beliefs here for the sake of concision. If you’re interested in learning more, the book Bayes Rules! by Johnson, Ott, and Dogucu is awesome, and the first chapter is very accessible (subsequent chapters assume some knowledge of programming and mathematical notation).">
+
+
+
+
+	<meta itemprop="name" content="Updating beliefs via Bayes’ Rule">
+	<meta itemprop="description" content="We talk a lot in education about “using data,” and my general take is that the phrase “using data” doesn’t actually mean anything. But, if we want to be gracious and ignore all of the vagaries that come along with that phrase, then I think that “applying Bayes’ Rule” is what most people mean when they talk about “using data.” Bayes’ Rule mathematically formalizes a process for updating beliefs that incorporates both prior beliefs and new data. It can be used to estimate lots of things, but we’ll limit this to beliefs here for the sake of concision. If you’re interested in learning more, the book Bayes Rules! by Johnson, Ott, and Dogucu is awesome, and the first chapter is very accessible (subsequent chapters assume some knowledge of programming and mathematical notation).">
+	<meta itemprop="datePublished" content="2025-01-10T13:00:31+00:00">
+	<meta itemprop="dateModified" content="2025-01-10T13:00:31+00:00">
+	<meta itemprop="wordCount" content="917">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Eric Ekholm</h2>
+</a>
+<nav>
+<a href="/">Tech Blog</a>
+
+<a href="/edudata/">Edudata Blog</a>
+
+<a href="/about">About</a>
+
+<a href="https://github.com/ekholme">Github</a>
+
+<a href="/projects">Projects</a>
+
+<a href="/index.xml">RSS</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Updating beliefs via Bayes’ Rule</h1>
+<p>
+  <i>
+    <time datetime='2025-01-10'>
+      10 Jan, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>We talk a lot in education about “using data,” and my general take is that the phrase “using data” doesn’t actually mean anything. But, if we want to be gracious and ignore all of the vagaries that come along with that phrase, then I think that “applying <a href="https://en.wikipedia.org/wiki/Bayes%27_theorem">Bayes’ Rule</a>” is what most people mean when they talk about “using data.” </p>
+<p>Bayes&rsquo; Rule mathematically formalizes a process for updating beliefs that incorporates both prior beliefs and new data. It can be used to estimate lots of things, but we’ll limit this to beliefs here for the sake of concision. If you’re interested in learning more, the book <a href="https://www.bayesrulesbook.com/">Bayes Rules!</a> by Johnson, Ott, and Dogucu is awesome, and the first chapter is very accessible (subsequent chapters assume some knowledge of programming and mathematical notation).</p>
+<p><em>Disclaimer – this post isn’t trying to be mathematically rigorous. The goal is to present the spirit of Bayesian stats broadly, and this requires some imprecise and hand-wavey language. If that bothers you, I’m sorry.</em></p>
+<p>The premise of Bayes’ Rule is that we have some prior belief about a thing, and when we encounter new data about that thing, we combine the new data with the prior belief to arrive at a new belief. That new belief will then, in turn, function as the prior belief when we encounter yet more new data, and we combine that prior belief with data yet again update our belief, ad infinitum.</p>
+<p>Implicit in this framing is that our prior beliefs can be weak, strong, or anywhere in between, and any new data we encounter can likewise be weak, strong, or anywhere in between.</p>
+<p>An obvious (to me) application of this in education is teachers’ beliefs about students’ academic ability. For the sake of an example, let’s say that I’m an 8th grade English/Language Arts teacher, and that students’ reading proficiency can rigorously be quantified as falling between 1 and 100, where higher scores are better. Please just go with it – I recognize all of the objections we could make about this.</p>
+<p>At the beginning of the school year, before a single student steps a single Croc-wearing foot inside my classroom, I might reasonably assume that all of my students are average readers – that they’d score a 50 on this 1-100 scale. But this would be a pretty weak prior belief. I’m assuming these students are average simply because I have no other data to base my belief on, and absent any other data, the average is the most reasonable guess.</p>
+<p>But then all of the students come in, wearing all different kinds of Crocs, and I give them their first homework assignment, in which they have to read and respond to a short nonfiction passage. When I review the responses to this assignment, I use this new data to update my beliefs about my students. Jayden’s response is thorough and well-thought out. Dan <em>technically</em> turned something in, but it’s not good. Joy didn’t turn anything in. Although this is a single homework assignment, and although a response on a homework assignment may not be a great indicator of actual ability, it does give me <em>some</em> data. So I might tweak my beliefs about Jayden and Dan – maybe now I think Jayden is more like a 55 and Dan is a 48. I wouldn’t change my beliefs about Joy since I have no new data about her. So now I have updated beliefs, but they’re still not strong beliefs because they&rsquo;re based on a single, not-terribly-great piece of data.</p>
+<p>Then, we take a beginning-of-the-year benchmark test that’s mandated by the state. Jayden does well, Joy absolutely crushes it, Dan does better than average. And since the state test has (in theory!) been created and rigorously validated by some testing company like Pearson or ETS, I probably put more emphasis on this test when I update my beliefs than I put on the homework assignment. So now on our scale of 1-100, maybe Joy is at like an 85, Jayden is at a 70, and Dan is at a 55. These numbers are purely made up, but you get the point.</p>
+<p>And then this process continues. Each time I grade a paper, discuss a book, watch a student annotate their reading, whatever, I update my beliefs about that student’s reading proficiency. Maybe I become more certain as I collect evidence that confirms your beliefs. Maybe I become less certain as I collect evidence that challenges my beliefs. Maybe (hopefully!) a student is becoming a better reader over the year and I need to update my beliefs accordingly.</p>
+<p>This is Bayesian updating. </p>
+<p>Of course, this isn’t only useful for framing student reading proficiency. A school principal might use the same Bayesian knowledge-building process when thinking about how effective a school-wide behavior intervention is. And a school district administrator might use the same process when thinking about the effectiveness of a teacher-retention policy. Hopefully at the district level there’s more formal evaluation and actual statistics rather than the process being purely vibes-based, but even with real math, the process is still basically the same.</p>
+<p>This isn’t anything groundbreaking. Bayes’ Rule has been around for literal centuries. The process is also obvious and common-sensical. When I’ve talked about this with folks I work with, their response is basically “duh.” But I <em>do</em> think having this framework as a way to think about “using data” can be helpful because it gives us some way to latch onto a frustratingly slippery concept.</p>
+
+</content>
+
+
+
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>

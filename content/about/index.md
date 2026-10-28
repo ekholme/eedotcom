@@ -12,6 +12,6 @@ I earned my PhD in educational psychology from VCU in 2019. In my [dissertation]
 
 ## Writing
 
-I (irregularly) write a newsletter called [Edudata](https://www.edudata.blog/) mostly about stuff residing at the intersection of education and data.
+I write stuff sometimes, usually either in my [tech blog](/) or in my [blog about education and data](/edudata/).
 
 I take notes about coding, stats, fitness, and anything else interesting to me at [Brain](https://ekholme.github.io/brain/), my public notes site.

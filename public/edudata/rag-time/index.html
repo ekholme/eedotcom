@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>RAG time | Eric Ekholm</title>
+<meta name="title" content="RAG time" />
+<meta name="description" content="I’m both an AI optimist and an AI skeptic. I use AI tools in my day-to-day work, mostly to help with coding, but with some other tasks as well. Google Gemini is one of the tabs I open, along with my email and calendar, as soon as I boot up my laptop in the morning, and I keep it open throughout the workday.
+And yet. I’m not fully on board the AI hype train, especially for education. Like I wrote about a few weeks ago in my reflection on Grammarly and AI tools that support writing, it feels both shortsighted and naive to try to use AI to solve every problem. Sure, AI tools can help you produce more, but they&rsquo;re not going to solve issues that are, at their root, cultural, organizational, or interpersonal problems." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="https://ericekholm.com/edudata/rag-time/">
+	<meta property="og:site_name" content="Eric Ekholm">
+	<meta property="og:title" content="RAG time">
+	<meta property="og:description" content="I’m both an AI optimist and an AI skeptic. I use AI tools in my day-to-day work, mostly to help with coding, but with some other tasks as well. Google Gemini is one of the tabs I open, along with my email and calendar, as soon as I boot up my laptop in the morning, and I keep it open throughout the workday.
+And yet. I’m not fully on board the AI hype train, especially for education. Like I wrote about a few weeks ago in my reflection on Grammarly and AI tools that support writing, it feels both shortsighted and naive to try to use AI to solve every problem. Sure, AI tools can help you produce more, but they’re not going to solve issues that are, at their root, cultural, organizational, or interpersonal problems.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="edudata">
+		<meta property="article:published_time" content="2025-04-11T12:00:31+00:00">
+		<meta property="article:modified_time" content="2025-04-11T12:00:31+00:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="RAG time">
+	<meta name="twitter:description" content="I’m both an AI optimist and an AI skeptic. I use AI tools in my day-to-day work, mostly to help with coding, but with some other tasks as well. Google Gemini is one of the tabs I open, along with my email and calendar, as soon as I boot up my laptop in the morning, and I keep it open throughout the workday.
+And yet. I’m not fully on board the AI hype train, especially for education. Like I wrote about a few weeks ago in my reflection on Grammarly and AI tools that support writing, it feels both shortsighted and naive to try to use AI to solve every problem. Sure, AI tools can help you produce more, but they’re not going to solve issues that are, at their root, cultural, organizational, or interpersonal problems.">
+
+
+
+
+	<meta itemprop="name" content="RAG time">
+	<meta itemprop="description" content="I’m both an AI optimist and an AI skeptic. I use AI tools in my day-to-day work, mostly to help with coding, but with some other tasks as well. Google Gemini is one of the tabs I open, along with my email and calendar, as soon as I boot up my laptop in the morning, and I keep it open throughout the workday.
+And yet. I’m not fully on board the AI hype train, especially for education. Like I wrote about a few weeks ago in my reflection on Grammarly and AI tools that support writing, it feels both shortsighted and naive to try to use AI to solve every problem. Sure, AI tools can help you produce more, but they’re not going to solve issues that are, at their root, cultural, organizational, or interpersonal problems.">
+	<meta itemprop="datePublished" content="2025-04-11T12:00:31+00:00">
+	<meta itemprop="dateModified" content="2025-04-11T12:00:31+00:00">
+	<meta itemprop="wordCount" content="994">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Eric Ekholm</h2>
+</a>
+<nav>
+<a href="/">Tech Blog</a>
+
+<a href="/edudata/">Edudata Blog</a>
+
+<a href="/about">About</a>
+
+<a href="https://github.com/ekholme">Github</a>
+
+<a href="/projects">Projects</a>
+
+<a href="/index.xml">RSS</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>RAG time</h1>
+<p>
+  <i>
+    <time datetime='2025-04-11'>
+      11 Apr, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>I’m both an AI optimist and an AI skeptic. I use AI tools in my day-to-day work, mostly to help with coding, but with some other tasks as well. Google Gemini is one of the tabs I open, along with my email and calendar, as soon as I boot up my laptop in the morning, and I keep it open throughout the workday.</p>
+<p>And yet. I’m not fully on board the AI hype train, especially for education. Like I wrote about a few weeks ago in <a href="/edudata/writing-for-busy-readers-and-why-not-to-use-ai/">my reflection on Grammarly</a> and AI tools that support writing, it feels both shortsighted and naive to try to use AI to solve every problem. Sure, AI tools can help you produce more, but they&rsquo;re not going to solve issues that are, at their root, cultural, organizational, or interpersonal problems.</p>
+<p>When ChatGPT first burst into public consciousness, I was just as susceptible to this hype as anyone else. 2 years ago, I built a proof-of-concept lesson plan generator (<a href="https://github.com/ekholme/saul">here’s the code for it</a>, although the tool itself is no longer available online) that could prioritize areas of instruction based on a school’s previous assessment data and generate lessons targeting these skills. Now, 2 years later, I still see some value in this strategy, but I’m also much more skeptical of it. The lesson it produces might not be any good. Or it might draw on approaches that aren’t empirically supported (e.g. learning styles) or that don’t align with your school’s or school district’s pedagogical approach/curriculum. The tool can produce a single lesson, but stringing together a bunch of independent lessons with no thought for continuity certainly isn&rsquo;t ideal. This isn’t to say that the tool I put together was useless, but rather that it wasn’t doing 80 or 90% of the work for a teacher, who merely had to do some light editing after being bequeathed with a lesson by some omniscient AI platform. It was doing maybe 30-50% of the work, if that, and getting its lesson plan to be something ready for the classroom still required quite a bit of expert revision from the teacher.</p>
+<p>To be clear, there’s nothing wrong with this. It’s probably what we should be shooting for – using AI to scaffold a solution rather than expecting it to completely solve a problem.</p>
+<p>One technique that could improve this approach, though, is <a href="https://ekholme.github.io/brain/Retrieval-Augmented-Generation">retrieval augmented generation (RAG)</a>, which is a needlessly complex tech-y way of saying that this technique allows LLMs to incorporate data that they weren’t trained on. The massive LLMs that tech companies like OpenAI and Google and others deploy are trained on (i.e. they learn from) large swaths of the public internet, plus also probably some non-public and/or copyrighted stuff that these companies slurp up anyway. Even so, they’re obviously not trained on things like your school district’s internal documents or your school&rsquo;s lesson plan template. RAG addresses this by giving us a way to programmatically retrieve and inject relevant internal documents as context into a prompt that we pass to an LLM, which allows the LLM to use those documents when generating responses.</p>
+<p>This helps address some of the issues with AI lesson planner described above. If we can feed relevant curriculum documents – pieces of a curriculum map, unit plans, exemplary lesson plans, templates, resources, etc – that our own schools or school districts have created, we get some assurances that the lessons these AI tools produce will align with our internal pedagogical approaches and will include most of the components we expect in our lessons. They’ll also probably be better than what a generic, zero-shot prompt to an LLM would produce.</p>
+<p>How does this work? First, we’d load our curriculum documents into a specialized database (a vector database). Next, we&rsquo;d develop a prompt that we can systematically manipulate with queries and relevant documents. We (the people building the tool, in this hypothetical at least) probably want to first include some sort of preamble that describes the task to the LLM, like this:</p>
+<blockquote>
+<p>“You are a bot that helps teachers plan lessons using context from the curriculum materials referenced below. Be sure to respond completely, incorporating relevant information from the referenced curriculum materials. If the materials below are irrelevant to the answer, you may ignore them, but please indicate that you are doing so in your response. Please return your response as a lesson plan following {describe your lesson plan template here}”</p>
+</blockquote>
+<p>This tells the LLM its role and tells it to prioritize the documents we’ll pass to it. The third sentence is kind of a safeguard that gives the model an out if it can’t find relevant content in the passages, but it tells the model it needs to notify us if this is the case.</p>
+<p>In the next step, we’d append whatever question the teacher/user asked to this preamble. This might be something like, “can you help me plan a lesson for my algebra class on factoring polynomials?”</p>
+<p>The RAG tool would then take that user question and search the database for the most relevant documents – hopefully some curriculum maps, unit plans, or lesson plans involving factoring polynomials. (If you&rsquo;re interested in how this works, I have some loose notes on it <a href="https://ekholme.github.io/brain/Embeddings#vector-search">here</a>). And these then also get appended to the preamble and user question, so we end up with a big chunk of text (PREAMBLE + QUESTION + RETRIEVED_DOCUMENTS) that all get passed together as a prompt to an LLM like Gemini or ChatGPT, which will then be able to incorporate our specific contextual information into its answer.</p>
+<p>Will this produce perfect lesson plans or unit plans that teachers can just pick up and use? Probably not. Could it still produce garbage? Absolutely, and especially so if your internal documents are incoherent. </p>
+<p>But amidst all of the AI hype that we’re all being bombarded with right now, this is one of the few approaches that, when applied to education, actually feels worthwhile to me.</p>
+
+</content>
+
+
+
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>

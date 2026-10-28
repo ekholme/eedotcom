@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Some hopefully useful questions to guide data-driven decisions | Eric Ekholm</title>
+<meta name="title" content="Some hopefully useful questions to guide data-driven decisions" />
+<meta name="description" content="I’ve mentioned in multiple posts on this blog that the primary “point” of data is to help inform decisions. There are probably occasions where it’s useful to just report out on broad compliance-y things, or where we want to explore data with no clear decision in mind in the hopes that some revelation will jump out and whack us over the head. But mostly, if we’re devoting any considerable amount of time to analyzing data, we ought to have some potential decision in mind." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="https://ericekholm.com/edudata/some-hopefully-useful-questions-to-guide-data-driven-decisions/">
+	<meta property="og:site_name" content="Eric Ekholm">
+	<meta property="og:title" content="Some hopefully useful questions to guide data-driven decisions">
+	<meta property="og:description" content="I’ve mentioned in multiple posts on this blog that the primary “point” of data is to help inform decisions. There are probably occasions where it’s useful to just report out on broad compliance-y things, or where we want to explore data with no clear decision in mind in the hopes that some revelation will jump out and whack us over the head. But mostly, if we’re devoting any considerable amount of time to analyzing data, we ought to have some potential decision in mind.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="edudata">
+		<meta property="article:published_time" content="2025-05-02T12:00:50+00:00">
+		<meta property="article:modified_time" content="2025-05-02T12:00:50+00:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Some hopefully useful questions to guide data-driven decisions">
+	<meta name="twitter:description" content="I’ve mentioned in multiple posts on this blog that the primary “point” of data is to help inform decisions. There are probably occasions where it’s useful to just report out on broad compliance-y things, or where we want to explore data with no clear decision in mind in the hopes that some revelation will jump out and whack us over the head. But mostly, if we’re devoting any considerable amount of time to analyzing data, we ought to have some potential decision in mind.">
+
+
+
+
+	<meta itemprop="name" content="Some hopefully useful questions to guide data-driven decisions">
+	<meta itemprop="description" content="I’ve mentioned in multiple posts on this blog that the primary “point” of data is to help inform decisions. There are probably occasions where it’s useful to just report out on broad compliance-y things, or where we want to explore data with no clear decision in mind in the hopes that some revelation will jump out and whack us over the head. But mostly, if we’re devoting any considerable amount of time to analyzing data, we ought to have some potential decision in mind.">
+	<meta itemprop="datePublished" content="2025-05-02T12:00:50+00:00">
+	<meta itemprop="dateModified" content="2025-05-02T12:00:50+00:00">
+	<meta itemprop="wordCount" content="1261">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Eric Ekholm</h2>
+</a>
+<nav>
+<a href="/">Tech Blog</a>
+
+<a href="/edudata/">Edudata Blog</a>
+
+<a href="/about">About</a>
+
+<a href="https://github.com/ekholme">Github</a>
+
+<a href="/projects">Projects</a>
+
+<a href="/index.xml">RSS</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Some hopefully useful questions to guide data-driven decisions</h1>
+<p>
+  <i>
+    <time datetime='2025-05-02'>
+      02 May, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>I’ve mentioned in multiple posts on this blog that the primary “point” of data is to help inform decisions. There are probably occasions where it’s useful to just report out on broad compliance-y things, or where we want to explore data with no clear decision in mind in the hopes that some revelation will jump out and whack us over the head. But mostly, if we’re devoting any considerable amount of time to analyzing data, we ought to have some potential decision in mind.</p>
+<p>Data-driven decision making obviously isn’t anything new. People have probably been doing some version of this since we started connected cooking our meat and getting sick less. And if you Google “data driven decision making,” you’ll get about a gorillion hits, with results from Harvard Business School and Tableau and IBM and Forbes and countless self-proclaimed “thought leaders” and everyone in between.</p>
+<p>And although I’m much too self-aware and have far too much dignity to ever (unironically) call myself a thought leader…yes, I am also about to write about data-driven decision making. And I’m even going to have the audacity to propose a framework/set of principles to help you, dear reader, support data-driven decision making in your own school or school district, only for the low price of…I kid, I kid.</p>
+<p>For real though, a big part of my job is working with my colleagues to help them refine their maybe-not-fully-baked requests for data analyses. It’s incredibly rare that someone comes to me with, like, a detailed proposal delineating exactly what analyses they want conducted and which students ought to be sampled and where the data lives and who owns the data and what sociopolitical factors are spurring them to come knock on the wall of my cube and apologize for intruding and ask for this set of analyses at this particular moment. Usually people slink around the corner with a bindle full of ideas and their own subject matter expertise and ask if we can maybe set up a meeting to sort through everything together.</p>
+<p>Which is great – this is actually one of the aspects of my job I enjoy the most. I get to work with smart people who want to do something meaningful for students but who also need some help figuring out the data piece of it all.</p>
+<p>And so, a couple of years ago, my teammates and I put together an internal framework for managing these conversations. Since this whole “data-driven decision making” enterprise has been around basically forever, there are oodles of resources available. My favorite one was (and still is) <a href="https://www.caitlinhudon.com/posts/framework-decisions-data">Caitlin Hudon’s data-driven decision making framework</a>. And so, when we were creating our own internal guidance, we liberally adapted and outright stole from Caitlin’s framework.</p>
+<p>Thanks Caitlin!</p>
+<p>We ended up creating a set of guiding questions that we ask our other colleagues when they come to us with requests. These guiding questions fall into four categories, and we usually broach them during meetings in roughly this order:</p>
+<h2 id="problemconcern">Problem/Concern</h2>
+<p>These questions are all just intended to help people kick ideas around. Maybe narrow something that’s too broad down to the most important cognitive kernels. Maybe articulate some underlying concerns or questions that are actually at the heart of the matter.</p>
+<p>Some of these guiding questions include:</p>
+<ul>
+<li>Tell me about your concerns about X?</li>
+<li>Why are you interested in looking into data about X?</li>
+<li>What specifically are you trying to learn about X from the data?</li>
+<li>Can you state your problem/concern about X in a single sentence?</li>
+</ul>
+<h2 id="define-the-decision">Define the Decision</h2>
+<p>After rolling around the ideas a bit, we’re hopefully ready to define an actual decision we want to make. The point of this part of the conversation is to move from a vague feeling of &ldquo;it would be interesting to learn more about X&rdquo; to a concrete &ldquo;I want to make a decision about X.&rdquo;</p>
+<p>Some of the guiding questions in this category are:</p>
+<ul>
+<li>What is the decision you’d like to make? And how does this relate back to the stated problem?</li>
+<li>Who is impacted most by this decision?</li>
+<li>What are your possible choices?</li>
+<li>What does a “good” outcome look like? (This is trying to get at the underlying thing(s) we want to maximize or minimize)</li>
+<li>Are there any outcomes that are unacceptable?</li>
+</ul>
+<h2 id="define-additional-context-and-constraints">Define Additional Context and Constraints</h2>
+<p>Once we have the broad strokes of the decision defined, we next discuss some additional context. This gets into things like deadlines, timings of relevant contextual factors, potential collaborators or other interested parties, relevant policies, etc.</p>
+<p>Some of the guiding questions in this category are:</p>
+<ul>
+<li>Do you have a decision deadline? What happens if you don’t meet it?</li>
+<li>Is your decision reversible?</li>
+<li>What are the potential costs of one decision vs another? (<em>Note that this could be part of the later data analysis if these aren’t known upfront</em>)</li>
+<li>Beyond the people/groups you represent, is there anyone else this decision would have a large impact on?</li>
+<li>What policies, if any, exist that could influence this decision?</li>
+<li>Are there any other critical practical constraints?</li>
+</ul>
+<h2 id="determine-data-needed">Determine Data Needed</h2>
+<p>The last (!) thing we discuss is data. Well, that’s the idea at least, although sometimes data comes up earlier. This isn&rsquo;t a script. But I really do believe that it’s not worthwhile to start talking about what data is available, how we ought to analyze it, and all of that until we’ve determined what decision we want to make and walked through all (or at least most) of the contextual factors influencing the decision.</p>
+<p>Anyway. These questions get into the data, but you might notice they’re mostly not nuts-and-bolts questions. Even when we’re discussing data, what I need most from the person making this request is still value- and subject-matter-centric stuff. I’m not asking about the details of, say, an individual column in a spreadsheet – I can figure this out later, or else I can send an email.</p>
+<p>Here are some of the questions that fall into this category:</p>
+<ul>
+<li>Is there data that would unequivocally lead to any specific decision?</li>
+<li>If you’re leaning in one direction, what data would change your mind?</li>
+<li>What kind of deliverable would be most helpful (e.g. a number, a spreadsheet, a dashboard, a report, a visualization, etc)?</li>
+<li>If the “ideal” data isn’t available, what would it cost (in terms of money, effort, time, and social capital) to collect it? Is the data worth this cost?</li>
+<li>What specific metrics do you think are most useful to consider? <em>(Ideally we want to limit this to a few well-defined metrics)</em></li>
+</ul>
+<p>Since I’m a real person and not an automaton, I’m not literally going through all of these questions verbatim during our conversations, but I do try to make sure I’m more or less getting all of this information. I have a note-taking template, too, that has neat little sections that correspond to those above, and each section has the guiding questions printed in it because I very often get sidetracked and need a visual cue to get me back on track. It may also take a few conversations or follow-up emails to get everything, especially for larger projects that have the potential to affect multiple people.</p>
+<p>To summarize – this framework for thinking about data-driven decision making has helped me, and it’s helped me support my colleagues. Maybe it’ll help you too. I’m not promising it will change your life or your career trajectory. I’m not claiming any of this is revolutionary or visionary or any other kind of -ary. I’m certainly not claiming it’s “disruptive” or a “force-multiplier” or any other thought-leader bullshit.</p>
+
+</content>
+
+
+
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>
