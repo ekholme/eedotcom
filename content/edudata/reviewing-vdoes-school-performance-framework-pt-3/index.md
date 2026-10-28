@@ -1,0 +1,39 @@
++++
+date = '2025-02-28T13:00:13Z'
+draft = false
+title = 'Reviewing VDOE’s school performance framework (pt 3)'
++++
+
+In the last [two](/edudata/reviewing-vdoes-school-performance-framework-pt-2/) [posts](/edudata/reviewing-vdoes-school-performance-framework-pt-1/) in this mini-series reviewing Virginia’s new [school performance framework](https://www.doe.virginia.gov/state-board-data-funding/accreditation-accountability/school-performance-and-support-framework/spsf-overview), I shared my thoughts on its mastery and growth components. I’d encourage you to check out those posts if you haven’t, but my quick summary of them is that I think the mastery component is pretty good (not perfect!) and the growth component is trash.
+
+The final component (well, sort of) in the framework is [Readiness](https://www.doe.virginia.gov/home/showpublisheddocument/58440/638689150488770000). I say “sort of” because Graduation is also a component at the high school level, but that one is kinda self-explanatory. We could get into the minutiae of the business rules in terms of who counts in the calculations and who doesn’t, but that isn’t terribly exciting to me.
+
+Anyway, Readiness. In short, my take on the Readiness component is that it's too complicated. It’s bad, but not in the way that growth is bad. I watch a fair amount of Great British Baking Show, and the Readiness component is like the cake made by the overambitious, avante-garde baker who tries to use 10 different flavor profiles (cardamom, rhubarb, cherries, figs, clove, etc.) in a single cake, whereas the Growth component is like the cake made by the baker who forgets to add sugar.
+
+Let’s dive into it.
+
+------------------------------------------------------------------------
+
+This [one-pager](https://www.doe.virginia.gov/home/showpublisheddocument/58440/638689150488770000) from the Virginia Department of Education (VDOE) explains the Readiness component pretty well, and it’s worth reading if you're not familiar with the component. But I’ll go ahead and summarize it here.
+
+The Readiness indicator is supposed to measure the extent to which students are truly ready for whatever comes next – the next grade, the next school, or the next thing after high school. Readiness is included in the framework for elementary, middle, and high schools, but it’s weighted differently at each level. For elementary schools, it accounts for 10% of the total score; for middle schools, 20%; for high schools, 35% (note that there’s no growth component for high schools).
+
+The actual pieces that contribute to the Readiness calculation differ somewhat between school levels. Attendance counts for everyone, but then there are other weird wrinkles that are specific to each school level. Both elementary and middle schools will supposedly have “5 C’s” (**C**ritical thinking, **C**reative thinking, **C**ollaboration, **C**ommunication, **C**itizenship) performance tasks that students will take, but these don’t exist yet. Middle schools will also have career planning and advanced coursework factored into their calculation. And high schools will have the mind-bogglingly-gameable [3E (employment, enlistment, enrollment) indicators](https://www.doe.virginia.gov/home/showpublisheddocument/58446/638665791833570000) factored into their calculations.
+
+The biggest problem with how Readiness is operationalized in this system is that it’s too complicated. Schools *already* have an indicator of whether students are ready for the next grade…and it’s whether they’re promoted to the next grade. If a 5th grade student is ready for 6th grade, they’re promoted to 6th grade. If they’re not ready, they’re retained in 5th grade. Likewise with graduation. Virginia has well-defined [graduation requirements](https://www.doe.virginia.gov/parents-students/for-students/graduation/diploma-options), and the whole rationale behind having graduation requirements is that, if you meet these requirements, you’re “ready” for whatever comes after high school. There’s no need for anything else! 
+
+Of course, some people will argue that we’re promoting and graduating students who aren’t ready for the next grade level or the real world, and I’m sure that’s true to some extent. But the solution to that problem isn’t to introduce a different measure – one that has no bearing on whether students are promoted or graduate, mind you. Rather, the solution should be to ensure that the promotion/graduation requirements align with whatever we think students need to demonstrate to be “ready.” Like, if we truly believe all middle school students should take advanced coursework (they shouldn’t; the idea that *everyone* needs to be advanced is as insane and illogical as the notion that everyone should be above average)...then just make this a requirement to move onto high school?
+
+Think about it this way. Imagine I want to get in better shape. How do I measure if I'm succeeding? A very low-tech and yet totally valid option is to just look at myself in the mirror. I already have a mirror. I don't have to do anything differently except maybe look at myself in it a bit more critically. And if I look like I’m in better shape…then I’m in better shape. But what if my trusty bathroom mirror is actually a funhouse mirror, and it doesn't show me what I truly look like? Is the solution to say "mirrors don't work?" Why wouldn't I just fix my mirror?
+
+------------------------------------------------------------------------
+
+My other big issue is that trying to account for every potential post-secondary possibility in the 3Es measure is basically impossible, and so we end up with a system that [chases too many rabbits](https://www.goodreads.com/quotes/8688305-the-man-who-chases-two-rabbits-catches-neither). The 3Es framework awards points to schools when students meet specific criteria for employment, enlistment, or enrollment (i.e. college enrollment). “Employment” points are awarded for doing career and technical education (CTE)-type things; “enlistment” points are awarded for testing well enough on the [ASVAB](https://www.officialasvab.com/) test, which is a test that predicts “future academic and operational success in the military;” and “enrollment” points are awarded for taking and performing well in advanced courses, like AP, IB, or dual-enrollment courses.
+
+Schools earn points per student per “E,” meaning that any individual student can earn points across all 3 E’s (it’s kinda disingenuous to say that students *earn* points, since the students themselves don’t actually get anything). Meaning that a school will benefit – at least in terms of calculating a Readiness score – by having students earn as many E-points as possible. 
+
+It’s not hard to see how this works to the detriment of students. A school would benefit, points-wise, by scheduling a student who knows she wants to go to a 4-year college to study biology in a culinary arts CTE course. Inversely, a school would benefit from scheduling a student who knows she wants to be an automotive mechanic (and knows she *doesn’t* want to go to a 4 year college) in dual-enrollment, college-level math courses. And it would benefit from making every student take the ASVAB test, even if they have no interest in enlisting in the military.
+
+This isn’t to say that schools will do this; it’s meant to show that it’s a short jaunt to a place where this system encourages schools to work against students’ best interests.
+
+And for what? This whole Readiness component is overly complicated and superfluous. Schools are already supposed to help students be ready for employment, enlistment, or post-secondary enrollment after high school. And we already have loose metrics that track these things. Why are we adding in more arcane metrics, more performance tasks (that haven’t even been created yet!), more *stuff* that will end up being net-negative for students?

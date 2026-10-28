@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Being Data-Informed vs Data-Driven | Eric Ekholm</title>
+<meta name="title" content="Being Data-Informed vs Data-Driven" />
+<meta name="description" content="Within the past week or so, I’ve encountered two people who have purposefully distinguished between being “data driven” and “data informed.” First, Rick Saporta differentiates these two approaches in his recent presentation on business data strategy. And second, Tiankai Feng situates both “data informed” and “data driven” decision making on a continuum in his book Humanizing Data Strategy (p. 16-17).
+Although they make slightly different points, the heart of both Saporta and Feng’s positions is that “data-informed” decision making entails explicitly combining personal expertise with insights gained from data, whereas “data driven” decision making entails making a decision entirely based on data. In Feng’s argument, these decisions are entirely data-driven because they are made autonomously by some model or algorithm. In Saporta’s, these “data-driven” decisions are still made by people, but they’re made by people who either fail to appropriately weigh their expertise alongside the available data or who don’t have sufficient expertise to factor into the decision at hand." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="https://ericekholm.com/edudata/being-data-informed-vs-data-driven/">
+	<meta property="og:site_name" content="Eric Ekholm">
+	<meta property="og:title" content="Being Data-Informed vs Data-Driven">
+	<meta property="og:description" content="Within the past week or so, I’ve encountered two people who have purposefully distinguished between being “data driven” and “data informed.” First, Rick Saporta differentiates these two approaches in his recent presentation on business data strategy. And second, Tiankai Feng situates both “data informed” and “data driven” decision making on a continuum in his book Humanizing Data Strategy (p. 16-17).
+Although they make slightly different points, the heart of both Saporta and Feng’s positions is that “data-informed” decision making entails explicitly combining personal expertise with insights gained from data, whereas “data driven” decision making entails making a decision entirely based on data. In Feng’s argument, these decisions are entirely data-driven because they are made autonomously by some model or algorithm. In Saporta’s, these “data-driven” decisions are still made by people, but they’re made by people who either fail to appropriately weigh their expertise alongside the available data or who don’t have sufficient expertise to factor into the decision at hand.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="edudata">
+		<meta property="article:published_time" content="2025-10-30T12:00:59+00:00">
+		<meta property="article:modified_time" content="2025-10-30T12:00:59+00:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Being Data-Informed vs Data-Driven">
+	<meta name="twitter:description" content="Within the past week or so, I’ve encountered two people who have purposefully distinguished between being “data driven” and “data informed.” First, Rick Saporta differentiates these two approaches in his recent presentation on business data strategy. And second, Tiankai Feng situates both “data informed” and “data driven” decision making on a continuum in his book Humanizing Data Strategy (p. 16-17).
+Although they make slightly different points, the heart of both Saporta and Feng’s positions is that “data-informed” decision making entails explicitly combining personal expertise with insights gained from data, whereas “data driven” decision making entails making a decision entirely based on data. In Feng’s argument, these decisions are entirely data-driven because they are made autonomously by some model or algorithm. In Saporta’s, these “data-driven” decisions are still made by people, but they’re made by people who either fail to appropriately weigh their expertise alongside the available data or who don’t have sufficient expertise to factor into the decision at hand.">
+
+
+
+
+	<meta itemprop="name" content="Being Data-Informed vs Data-Driven">
+	<meta itemprop="description" content="Within the past week or so, I’ve encountered two people who have purposefully distinguished between being “data driven” and “data informed.” First, Rick Saporta differentiates these two approaches in his recent presentation on business data strategy. And second, Tiankai Feng situates both “data informed” and “data driven” decision making on a continuum in his book Humanizing Data Strategy (p. 16-17).
+Although they make slightly different points, the heart of both Saporta and Feng’s positions is that “data-informed” decision making entails explicitly combining personal expertise with insights gained from data, whereas “data driven” decision making entails making a decision entirely based on data. In Feng’s argument, these decisions are entirely data-driven because they are made autonomously by some model or algorithm. In Saporta’s, these “data-driven” decisions are still made by people, but they’re made by people who either fail to appropriately weigh their expertise alongside the available data or who don’t have sufficient expertise to factor into the decision at hand.">
+	<meta itemprop="datePublished" content="2025-10-30T12:00:59+00:00">
+	<meta itemprop="dateModified" content="2025-10-30T12:00:59+00:00">
+	<meta itemprop="wordCount" content="587">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Eric Ekholm</h2>
+</a>
+<nav>
+<a href="/">Tech Blog</a>
+
+<a href="/edudata/">Edudata Blog</a>
+
+<a href="/about">About</a>
+
+<a href="https://github.com/ekholme">Github</a>
+
+<a href="/projects">Projects</a>
+
+<a href="/index.xml">RSS</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Being Data-Informed vs Data-Driven</h1>
+<p>
+  <i>
+    <time datetime='2025-10-30'>
+      30 Oct, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Within the past week or so, I’ve encountered two people who have purposefully distinguished between being “data driven” and “data informed.” First, Rick Saporta differentiates these two approaches in his <a href="https://www.youtube.com/watch?v=KSNvgAaxTbs&amp;t=1096s">recent presentation on business data strategy</a>. And second, Tiankai Feng situates both “data informed” and “data driven” decision making on a continuum in his book <a href="https://www.amazon.com/Humanizing-Data-Strategy-Leading-Heart-ebook/dp/B0D9TSVYR3"><em>Humanizing Data Strategy</em></a> (p. 16-17).</p>
+<p>Although they make slightly different points, the heart of both Saporta and Feng’s positions is that “data-informed” decision making entails explicitly combining personal expertise with insights gained from data, whereas “data driven” decision making entails making a decision entirely based on data. In Feng’s argument, these decisions are entirely data-driven because they are made autonomously by some model or algorithm. In Saporta’s, these “data-driven” decisions are still made by people, but they’re made by people who either fail to appropriately weigh their expertise alongside the available data or who don’t have sufficient expertise to factor into the decision at hand.</p>
+<p>This is an interesting distinction to me, both because everything in contemporary education anymore must be “data driven,” and because I’ve written before in this blog about making “<a href="/edudata/some-hopefully-useful-questions-to-guide-data-driven-decisions/">data driven decisions.</a>”</p>
+<p>To some extent, the distinction is arbitrary. Or, maybe not the distinction itself, but the labels at least. In my previous post about my team’s data-driven decision framework, I’m actually advocating for what Saporta and Feng would call “data-informed decision making.” Am I going to go back and edit that post and all of my team’s document templates now to reference “data-informed decision making” rather than “data-driven decision making?” Zero chance. If, at some point in the future, the “data driven” and “data informed” labels end up being proper nouns that everyone agrees on and are codified in the Oxford English Dictionary and the distinctions between them are ontologically critical, then sure, I’ll update my usage. For now though, I think I’ve happened to stumble on two people who kinda happen to use a common vocabulary to make similar distinctions.</p>
+<p>That said, although I don’t think the labels themselves matter all that much, the approaches they represent matter quite a bit. In education, the vast majority of our decisions should be what Feng and Saporta refer to as “data-informed” – shaped by both personal expertise and relevant data. There are some cases where “data-driven” decisions make sense – mostly low-stakes micro-decisions where the opportunity cost of having to bring in an expert to help make the decision isn’t worth the potential benefit that expertise adds. Consider a math app that automatically generates problems for students based on their prior performance. Could a teacher with deep knowledge of math and of her students come up with better questions? Probably! But is continuously generating the best-possible practice problems the best use of her time? Probably not!</p>
+<p>But for medium- or high-stakes decisions about students, teachers, or schools, I think we absolutely need to take the “data-informed” approach. Partially because no database or student information system is going to store quantitative data representing all of the relevant contextual factors we ought to consider when making these decisions – even state-of-the-art AI models can’t <em>fully</em> understand your unique context. And partially because, on principle, it’s Orwellianly dystopian to outsource that shit to an algorithm.</p>
+<p>Regardless, even if I’m not going to rebrand all of my own stuff from “data driven” to “data informed,” I do think the distinction made by Saporta and Feng is worth using as a lens to inform how we think about using data in our work.</p>
+
+</content>
+
+
+
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>

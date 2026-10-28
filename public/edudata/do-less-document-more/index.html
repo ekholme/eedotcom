@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Do less, document more | Eric Ekholm</title>
+<meta name="title" content="Do less, document more" />
+<meta name="description" content="Documentation is like sleep. It’s unsexy. It’s boring. It feels like it gets in the way of doing more. It eats up time that you could be using to do something else, something more productive.
+And yet, if you skimp on it, you always regret it. Maybe not immediately, but somewhere down the road, you regret it while you sit, confused, overcaffeinated, unsure of what you should be doing and why you (yet again) put yourself in this position." />
+<meta name="keywords" content="" />
+
+
+<meta property="og:url" content="https://ericekholm.com/edudata/do-less-document-more/">
+	<meta property="og:site_name" content="Eric Ekholm">
+	<meta property="og:title" content="Do less, document more">
+	<meta property="og:description" content="Documentation is like sleep. It’s unsexy. It’s boring. It feels like it gets in the way of doing more. It eats up time that you could be using to do something else, something more productive.
+And yet, if you skimp on it, you always regret it. Maybe not immediately, but somewhere down the road, you regret it while you sit, confused, overcaffeinated, unsure of what you should be doing and why you (yet again) put yourself in this position.">
+	<meta property="og:locale" content="en_us">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="edudata">
+		<meta property="article:published_time" content="2025-01-31T13:00:42+00:00">
+		<meta property="article:modified_time" content="2025-01-31T13:00:42+00:00">
+
+
+
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Do less, document more">
+	<meta name="twitter:description" content="Documentation is like sleep. It’s unsexy. It’s boring. It feels like it gets in the way of doing more. It eats up time that you could be using to do something else, something more productive.
+And yet, if you skimp on it, you always regret it. Maybe not immediately, but somewhere down the road, you regret it while you sit, confused, overcaffeinated, unsure of what you should be doing and why you (yet again) put yourself in this position.">
+
+
+
+
+	<meta itemprop="name" content="Do less, document more">
+	<meta itemprop="description" content="Documentation is like sleep. It’s unsexy. It’s boring. It feels like it gets in the way of doing more. It eats up time that you could be using to do something else, something more productive.
+And yet, if you skimp on it, you always regret it. Maybe not immediately, but somewhere down the road, you regret it while you sit, confused, overcaffeinated, unsure of what you should be doing and why you (yet again) put yourself in this position.">
+	<meta itemprop="datePublished" content="2025-01-31T13:00:42+00:00">
+	<meta itemprop="dateModified" content="2025-01-31T13:00:42+00:00">
+	<meta itemprop="wordCount" content="893">
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  <style>
+  :root {
+    --width: 720px;
+    --font-main: Verdana, sans-serif;
+    --font-secondary: Verdana, sans-serif;
+    --font-scale: 1em;
+    --background-color: #fff;
+    --heading-color: #222;
+    --text-color: #444;
+    --link-color: #3273dc;
+    --visited-color: #8b6fcb;
+    --blockquote-color: #222;
+  }
+
+  body {
+    font-family: var(--font-secondary);
+    font-size: var(--font-scale);
+    margin: auto;
+    padding: 20px;
+    max-width: var(--width);
+    text-align: left;
+    background-color: var(--background-color);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    line-height: 1.5;
+    color: var(--text-color);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-main);
+    color: var(--heading-color);
+  }
+
+  a {
+    color: var(--link-color);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  nav a {
+    margin-right: 8px;
+  }
+
+  strong,
+  b {
+    color: var(--heading-color);
+  }
+
+  button {
+    margin: 0;
+    cursor: pointer;
+  }
+
+  time {
+    font-family: monospace;
+    font-style: normal;
+    font-size: 15px;
+  }
+
+  main {
+    line-height: 1.6;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px dashed;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    font-family: monospace;
+    padding: 2px;
+    border-radius: 3px;
+  }
+
+  blockquote {
+    border-left: 1px solid #999;
+    color: var(--blockquote-color);
+    padding-left: 20px;
+    font-style: italic;
+  }
+
+  footer {
+    padding: 25px 0;
+    text-align: center;
+  }
+
+  .title:hover {
+    text-decoration: none;
+  }
+
+  .title h1 {
+    font-size: 1.5em;
+  }
+
+  .inline {
+    width: auto !important;
+  }
+
+  .highlight,
+  .code {
+    border-radius: 3px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    overflow-x: auto;
+  }
+
+  .highlight pre,
+  .code pre {
+    min-width: 100%;
+    width: max-content;
+  }
+
+   
+  ul.blog-posts {
+    list-style-type: none;
+    padding: unset;
+  }
+
+  ul.blog-posts li {
+    display: flex;
+  }
+
+  ul.blog-posts li span {
+    flex: 0 0 130px;
+  }
+
+  ul.blog-posts li a:visited {
+    color: var(--visited-color);
+  }
+
+</style>
+
+</head>
+
+<body>
+  <header><a href="/" class="title">
+  <h2>Eric Ekholm</h2>
+</a>
+<nav>
+<a href="/">Tech Blog</a>
+
+<a href="/edudata/">Edudata Blog</a>
+
+<a href="/about">About</a>
+
+<a href="https://github.com/ekholme">Github</a>
+
+<a href="/projects">Projects</a>
+
+<a href="/index.xml">RSS</a>
+
+</nav>
+</header>
+  <main>
+
+<h1>Do less, document more</h1>
+<p>
+  <i>
+    <time datetime='2025-01-31'>
+      31 Jan, 2025
+    </time>
+  </i>
+</p>
+
+<content>
+  <p>Documentation is like sleep. It’s unsexy. It’s boring. It feels like it gets in the way of doing more. It eats up time that you could be using to do something else, something more productive.</p>
+<p>And yet, if you skimp on it, you always regret it. Maybe not immediately, but somewhere down the road, you regret it while you sit, confused, overcaffeinated, unsure of what you should be doing and why you (yet again) put yourself in this position.</p>
+<hr>
+<p>People often talk about “data” – especially quantitative data – as if it provides some objective view of reality. As if it represents that capital-T Truth because it&rsquo;s numbers. It doesn’t take long working with data to disabuse yourself of this notion.</p>
+<p>Consider one of the most fundamental data tasks in education – counting students. For lots of reasons, we might want to know how many students are in a class, grade-level, school, or school division. We all know how to count, and we can use computers to help us count really big numbers, so this all should be pretty straightforward…right?</p>
+<p>Well, school enrollment changes throughout the year – on what day are we counting students? Do we count part-time students? What about students attending (noncompulsory) preschool? And what about kids who are <em>zoned</em> to attend, say, Enfield Elementary but <em>actually</em> attend Alston Elementary because they go to the gifted center at Alston– what school do we attribute them to?</p>
+<p>In some sense, the actual answers to these questions don’t matter. Or, rather, there’s no objectively right or wrong answer. The day of the year we pin our student counts to is arbitrary. What matters is that we’re consistent each time we count.</p>
+<p>One of the benefits of documenting data work is that it allows us to be more consistent. It sounds simple, but we won’t know the rules (or business logic) of our counting process unless someone documents it. And by “we,” I mean not just me, the person counting students, but also anyone else interested in using this count of students. Or whoever else has to take over counting students after I win the lottery and retire early.</p>
+<p>Also! Addressing these business-logic-y questions is only part of what makes documentation useful. It’s 2025 – I’m not going out to schools and counting students by hand like it&rsquo;s the 1800s. I’m pulling this data from some information system, so I should document where I’m getting my student counts. And even though I’m a data person and I like working with data, I’m not counting kiddos because I enjoy it. I’m doing it because someone else wants this number. So I ought to document not only where I’m getting the data, but also why I’m doing this count and to whom I’m sending the final product.</p>
+<p>All of this work for a simple count of students – I’m not even doing any statistics!</p>
+<hr>
+<p>Maybe all of the documentation I just described feels like too much. Maybe it seems onerous. How are you supposed to document all of these decisions in addition to all of the other data-centric tasks you need to accomplish?</p>
+<p>You’re not. You should do fewer things, so you can do each of them well. If you don’t have time to thoroughly document a data project, then I&rsquo;d argue that you don&rsquo;t have time to undertake the project at all.</p>
+<p>People in education are well-intentioned, and my take is that there’s a well-intentioned frenzy to “use data to inform instruction.” We’re inundated with lots of data from lots of sources and we feel an urge to use all of it. We get lots of reports and spreadsheets shared with us, and we might even talk to our colleagues about them. But then things happen, priorities change, and this possibly-valuable data slips our minds.</p>
+<p>Then we find these spreadsheets and reports in our email 3 months, 6 months, a year later, and we remember none of the context of those conversations, only a vague sense that this all seemed <em>so promising</em> at one point, and even though the data feels like maybe it answers a question we have, there’s no documentation, so we can’t actually be sure. And then we move on, because there&rsquo;s always another issue.</p>
+<p>To revisit the initial metaphor – imagine you go to the gym and lift weights 5 days a week, but then you only sleep 4 hours a night because you’re also trying to write a novel and learn piano and do yoga daily and learn to bake and you have to sacrifice sleep to try to keep up with all of these pursuits. Your lifting won’t  improve nearly as much as it could if you simply did less and slept more. You&rsquo;re doing the hard work, but throwing much of it away by not following through with the stuff that should be easy.</p>
+<p>All of this is much easier said than done! It’s something I constantly struggle with. For many of us, it’s much, much harder to do less than it is to do more.</p>
+<p>But writing thorough documentation really is the foundation of any data work. Forgoing it is like forgoing sleep. Maybe you can get away with it here and there, but it’s not a successful long term strategy. So do less, document your work better. Go to sleep early. You will appreciate it.</p>
+
+</content>
+
+
+
+<p>
+  
+</p>
+
+  </main>
+  <footer>Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>
+</footer>
+
+  
+</body>
+
+</html>

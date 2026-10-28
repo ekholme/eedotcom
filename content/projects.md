@@ -14,7 +14,7 @@ The following projects are ones I'm working on (or have worked on) without any a
 
 My "second brain." It's a collection of notes on things that interest me, including stats, coding, baking, and fitness, among others. Feel free to poke around!
 
-### [Edudata](https://edudata.blog)
+### [Edudata](/edudata/)
 
 A blog I write about topics loosely connected to education and data. I used to publish posts weekly, but lately I've been publishing less regularly.
 

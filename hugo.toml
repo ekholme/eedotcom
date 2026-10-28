@@ -24,23 +24,23 @@ url = "/"
 weight = 1
 
 [[menu.main]]
+name = "Edudata Blog"
+url = "/edudata/"
+weight = 2
+
+[[menu.main]]
 name = "About"
 url = "/about"
-weight = 2
+weight = 3
 
 [[menu.main]]
 name = "Github"
 url = "https://github.com/ekholme"
-weight = 3
+weight = 4
 
 [[menu.main]]
 name = "Projects"
 url = "/projects"
-weight = 4
-
-[[menu.main]]
-name = "Edudata"
-url = "https://edudata.blog"
 weight = 5
 
 
