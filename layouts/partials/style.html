@@ -145,4 +145,27 @@
     color: var(--visited-color);
   }
 
+  {{- if eq .RelPermalink "/projects/" }}
+
+  /* projects page: group each heading with its description */
+  main h2 {
+    margin: 1.75em 0 0.25em;
+  }
+
+  main h2 + p {
+    margin-top: 0;
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  main h3 {
+    font-size: 1em;
+    margin: 1.75em 0 0.2em;
+  }
+
+  main h3 + p {
+    margin-top: 0;
+  }
+  {{- end }}
+
 </style>

@@ -1,0 +1,7 @@
+{{- /* Usage: {{< image-row "a.jpg|alt text" "b.jpg|alt text" >}} */ -}}
+<div style="display: flex; gap: 0.75rem; margin: 1.5rem 0;">
+  {{- range .Params }}
+  {{- $parts := split . "|" }}
+  <img src="{{ index $parts 0 }}" alt="{{ index $parts 1 | default "" }}" style="flex: 1; min-width: 0; height: 280px; object-fit: cover; border-radius: 4px;">
+  {{- end }}
+</div>
