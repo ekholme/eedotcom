@@ -19,7 +19,7 @@ icon = "x"
 url = "https://x.com/ekholm_e"
 
 [[menu.main]]
-name = "Home"
+name = "Tech Blog"
 url = "/"
 weight = 1
 
